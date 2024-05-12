@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Set Timer</title>
+</head>
+
+<body class="bg-blue-200  flex justify-center items-center   min-h-screen ">
+    <div class="bg-black w-60 p-16 max-w-sm h-96 rounded-2xl shadow ">
+        <h1 class="text-white text-center text-lg">Set Timer</h1>
+
+        <!-- create the cicle -->
+        
+        <div
+        id="conic"
+        class="bg-conic flex items-center justify-center w-40 h-40 mx-[-20px] my-10 rounded-full relative"
+      >
+        <p id="timer" class="text-blue-200 relative text-5xl z-10">00:00</p>
+
+        <!-- Create the inner cirlce and line -->
+        <div
+          class="w-[calc(100%-4px)] aspect-square bg-gray-800 rounded-full absolute inset-[2px]"
+        ></div>
+
+
+                   <!-- Create the hand/marker -->
+
+                   <div class="hand h-1/2 absolute top-0">
+                    <span
+                      class="w-2 h-2 bg-white rounded-full absolute -top-1 -left-1"
+                    ></span>
+                  </div>
+                </div>
+
+                <!-- create button -->
+
+                <div class=" gap-6 justify-center flex ">
+                    
+                    <button id="reset" class="bg-blue-300 w-6 h-6 items-center justify-center">
+                        <i class="fas fa-refresh"></i>
+                    </button>
+
+                    <button id="play"  class="bg-blue-300 w-6 h-6 items-center justify-center">
+                        <i class="fas fa-play"></i>
+                    </button>
+
+                </div>
+                
+                
+                
+                
+                
+            </div>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
